@@ -1,0 +1,33 @@
+
+@font-face {
+    font-family: 'principal1';
+    src: url(../fonts/JacquesFrancois-Regular.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+
+body {
+    background-color: black;
+}
+
+#titulo-principal {
+    color:white;
+    font-family: "Jacques Francois";
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    height: -15px;
+}
+
+#escudo1 {
+    display: block;
+    margin: 0 auto;
+
+}
+ 
+#Porsche {
+    display: block;
+    margin: 0 auto;
+    
+}
+

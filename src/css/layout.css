@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Importa a fonte "Inter" do Google Fonts, com variações de peso e tamanho */
+
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+
+body {
+    background-color: black;
+}
+:root {
+    --color-background: #121212; /* Cor principal do fundo */
+    --color-highlight: #f4a261; /* Cor de destaque para botões/links */
+    --color-text: #e5e5e5; /* Cor padrão para o texto */
+    --color-muted: #a3a3a3; /* Cor para texto secundário */
+    --color-input-bg: #333333; /* Cor do fundo dos inputs */
+    --color-input-border: #555555; /* Cor da borda dos inputs */
+    --color-button: #f4a261; /* Cor de fundo dos botões */
+    --color-button-hover: #e76f51; /* Cor ao passar o mouse no botão */
+}
+
+#titulo-principal {
+    color: white; /* Define a cor do texto para branco */
+    font-family: 'Jacques Francois'; /* Estilo de fonte (não está incluída na importação) */
+    margin-top: 50px; /*Espaço entre a nav e o titulo*/
+    font-size:  100px; /*Aumenta o tamanho do titulo*/
+    text-align: center;
+    height: -15;
+    text-transform: uppercase;
+}
+
+ul {
+    display: flex; /* Cria um layout flexível */
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    background-color: #121212; /* Define a cor de fundo da lista */
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 16px; /* Adiciona espaçamento interno */
+    gap: 12px; /* Define o espaçamento entre os itens */
+    border-radius: 20px; /* Arredonda as bordas */
+}
+
+a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: white; /* Define a cor dos links como branco */
+    font-size: 20px; /* Define o tamanho da fonte dos links */
+}
+
+* {
+    font-family: 'Inter', sans-serif; /* Define a fonte padrão do documento */
+    margin: 0; /* Remove as margens padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    box-sizing: border-box; /* Inclui bordas e preenchimentos no tamanho total dos elementos */
+    letter-spacing: 1px; /* Define o espaçamento entre as letras */
+}
+
+footer {
+    width: 100%; /* Define a largura total do rodapé */
+    background-color: var(--color-background); /* Fundo do rodapé usando variável */
+    color: var(--color-text); /* Cor do texto usando variável */
+}
+
+#footer_content {
+    display: grid; /* Cria um layout baseado em grade */
+    grid-template-columns: repeat(4, 1fr); /* Define 4 colunas de tamanhos iguais */
+    padding: 3rem 3.5rem; /* Adiciona espaçamento interno */
+    gap: 1.5rem; /* Define o espaçamento entre os itens da grade */
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem; /* Adiciona margem inferior */
+    color: var(--color-highlight); /* Destaque para o título usando variável */
+}
+
+#footer_social_media {
+    display: flex; /* Cria um layout flexível */
+    gap: 1rem; /* Espaçamento entre os itens */
+    margin-top: 1.5rem; /* Adiciona margem superior */
+}
+
+#footer_social_media .footer-link {
+    display: flex; /* Cria um layout flexível para os ícones */
+    align-items: center; /* Centraliza os ícones verticalmente */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    height: 2.5rem; /* Altura dos ícones */
+    width: 2.5rem; /* Largura dos ícones */
+    color: var(--color-text); /* Cor padrão dos ícones */
+    border-radius: 50%; /* Torna os ícones circulares */
+    background-color: var(--color-input-bg); /* Fundo dos ícones */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transições suaves de cor e fundo */
+}
+ 
+
+
+#footer_social_media .footer-link:hover {
+    background-color: var(--color-highlight); /* Fundo ao passar o mouse */
+    color: var(--color-background); /* Cor do ícone ao passar o mouse */
+}
+
+.footer-list {
+    display: flex; /* Cria um layout flexível */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    gap: 0.75rem; /* Espaçamento entre os itens */
+    list-style: none; /* Remove os marcadores da lista */
+}
+
+.footer-list .footer-link {
+    color: var(--color-text); /* Define a cor padrão dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    transition: color 0.3s ease; /* Transição suave para a cor */
+}
+
+.footer-list .footer-link:hover {
+    color: var(--color-highlight); /* Cor dos links ao passar o mouse */
+}
+
+#footer_subscribe p {
+    color: var(--color-muted); /* Cor para texto secundário */
+    margin-top: 10px;
+}
+
+#input_group {
+    display: flex; /* Cria um layout flexível */
+    align-items: center; /* Centraliza verticalmente os itens */
+    border-radius: 4px; /* Arredonda as bordas */
+    overflow: hidden; /* Garante que os elementos não ultrapassem o container */
+    background-color: var(--color-input-bg); /* Fundo do input */
+    border: 1px solid var(--color-input-border); /* Borda do input */
+    margin-top: 40px; /*Espaço entre o titulo*/
+}
+
+#input_group input {
+    all: unset; /* Remove todos os estilos padrão do input */
+    padding: 0.75rem; /* Adiciona espaçamento interno */
+    width: 100%; /* Faz o input ocupar todo o espaço disponível */
+    color: var(--color-text); /* Define a cor do texto */
+    background: transparent; /* Fundo transparente */
+}
+
+#input_group button {
+    background-color: var(--color-button); /* Fundo do botão */
+    border: none; /* Remove a borda do botão */
+    color: var(--color-background); /* Cor do texto do botão */
+    padding: 0px 1.25rem; /* Espaçamento interno */
+    font-size: 1.125rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar clique */
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+#input_group button:hover {
+    background-color: var(--color-button-hover); /* Fundo ao passar o mouse no botão */
+}
